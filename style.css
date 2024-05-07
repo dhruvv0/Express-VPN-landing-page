@@ -1,0 +1,292 @@
+*{
+    padding: 16px;
+    margin: 16px;
+}
+
+:root{
+    --background-color: white;
+    --text-color: black;
+
+    --shadow-color-dark: lightgray;
+
+    --font-size-small: 0.9rem;
+    --font-size-normal : 1rem;
+    --font-size-large: 1.5rem;
+    --font-size-xl: 2rem;
+}
+
+main, header, footer{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.lang svg{
+    margin: 0%;
+}
+svg{
+    margin: 2%;
+    padding: 0%;
+}
+
+.button{
+    background-color: green;
+    border-radius: 2rem;
+}
+
+
+
+.cards{
+    margin: 10%;
+    padding: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.cards div{
+    width: 30%;
+}
+.card-text h3{
+    font-size: var(--font-size-large);
+    margin: 0%;
+    padding: 0%;
+}
+.card-text p{
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-size: var(--font-size-small);
+}
+.card-image img{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+.grid-cards{
+    padding: 0%;
+    margin: 0%;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.grid-cards:hover{
+    transform: translateY(-10px) ;
+    box-shadow: 3px 3px 8px 9px var(--shadow-color-dark);
+    
+}
+.grid-cards-image{
+    margin: 0%;
+    padding: 0%;
+}
+.grid-cards-image img{
+    max-width: 100%;
+}
+.grid-cards-text{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+.grid-cards-text h4{
+    margin: 0;
+    padding: 0%;
+    font-size: var(--font-size-large);
+}
+.grid-cards-text p{
+    margin: 0%;
+    font-size: var(--font-size-small);
+}
+
+.icon{
+    width: 2rem;
+    margin: 0%;
+    padding: 0%;
+}
+
+.header p{
+    
+    display: inline-block;
+    margin: 0%;
+    padding: 0%;
+}
+
+.main, .header, .logo, .logo img, .lang, .intro{
+    margin: 0%;
+    padding: 0%;
+} 
+header{
+    background-image: url(backgroung-image-vpn.avif);
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.logo{
+    margin-left: 1rem;
+    display: inline-block;
+}
+.logo img{
+    width: 12rem;
+}
+.lang{
+    float: right;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+}
+.main-heading{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+.main-heading h1{
+    margin: 0%;
+    padding: 0%;
+    font-size: 4rem;
+}
+.main-heading h5{
+    padding: 0%;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.main-heading p{
+    margin: 0%;
+    padding: 0%;
+}
+.avater{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(homepage-pingzhu-hero-figures-v2-opt__1___3_.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.link {
+    text-align: center;
+}
+
+#footer{
+    margin-top: 4rem;
+    background-image: url(map-background.jpg);
+    background-size: 100%;
+    width: 100%;
+    height:80vmin;
+    background-repeat: no-repeat;
+}
+ 
+.local-time,
+.local-time h3,
+.local-time p{
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
+}
+.server-arround-globe{
+    text-align: center;
+}
+.time{
+    float: right;
+}
+.local-time h3{
+    font-size: 3rem;
+    margin-right: 5rem;
+}
+#footer h2{
+    font-size: 2rem;
+}
+.map a{
+    margin-top: 100%;
+    margin-right: 50%;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+    --background-color: black;
+    --text-color: white;
+    --shadow-color-dark: royalblue;
+    }
+    #footer{
+        color: black;
+    }
+}
+
+
+@media (width<900px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .button{
+        font-size: 1rem;
+        padding: 2%;
+    }
+    .avater{
+        height: 20rem;
+    }
+    
+}
+
+@media (width<600px){
+    .card-text h3{
+        font-size: 1rem;
+    }
+    .card-text p{
+        font-size: 0.5rem;
+    }
+    .button{
+        font-size: 0.5rem;
+    }
+    .logo img{
+        width: 5rem;
+    }
+    .lang p{
+        font-size: 0.8rem;
+    }
+    .lang{
+        margin-top: 0%;
+    }
+    .main-heading h1{
+        font-size: 1rem;
+    }
+    .main-heading h5{
+        font-size: 0.5rem;
+    }
+    .main-heading p{
+        font-size: 0.5rem;
+    }
+    .avater{
+        height: 10rem;
+    }
+    .grid-cards-text h4{
+        font-size: 1rem;
+    }
+    .grid-cards-text p{
+        font-size: 0.5rem;
+    }
+    .local-time h3{
+        font-size: 1rem;
+    }
+    #footer h2{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    #footer{
+        height: 100vmax;
+    }
+}
